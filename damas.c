@@ -47,16 +47,16 @@ void desenhar(peca_ tabuleiro_[8][8])
                 printf("   "); // Casa Vazia
                 break;
             case 1:
-                printf(" \u2B24 "); // Pedra Branca
+                printf(" o "); // Pedra Branca
                 break;
             case 2:
-                printf(" \u25EF "); // Pedra Preta
+                printf(" x "); // Pedra Preta
                 break;
             case 3:
-                printf(" \u265B "); // Rainha Branca
+                printf(" O "); // Rainha Branca
                 break;
             case 4:
-                printf(" \u2655 "); // Rainha Preta
+                printf(" X "); // Rainha Preta
                 break;
             }
             // printf ("%d %d", i, j);
@@ -783,6 +783,11 @@ int main()
                 printf("Para que um jogador realize um movimento, o mesmo deve verificar qual a posição de sua peça escolhida e qual a posição final, ");
                 printf("dizendo primeiramente a letra da horizontal, seguida do número da vertical. \n");
                 printf(" - Alguns exemplos: a3b4, d6e5 e b4d6. \n");
+                printf(" - Devido aos unicodes que geram problemas no Dev C++ e Code Blocks, troquei as peças da seguinte forma: \n");
+                printf(" * Pedra Branca: o\n");
+                printf(" * Pedra Preta: x\n");
+                printf(" * Dama Branca: O\n");
+                printf(" * Dama Preta: X\n");
                 printf(" - Caso o jogador digite errado, faça um movimento que seja contra as regras ou que seja impossível, o programa irá pedir que o mesmo ");
                 printf("tente novamente.\n");
                 printf(" - Bom jogo!\n");
